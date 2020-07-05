@@ -79,7 +79,7 @@ loadUser = (data) =>{
   })
 }
 componentDidMount(){
-  fetch('http://localhost:3000')
+  fetch('https://beautiful-congaree-25199.herokuapp.com/')
   .then(response => response.json())
   .then(console.log)
 }
@@ -113,7 +113,7 @@ calculateFaceLocation=(data) =>{
     app.models.predict("a403429f2ddf4b49b307e318f00e528b", this.state.input)
     .then(response => {
       if (response){
-        fetch('http://localhost:3000/image',{
+        fetch('https://beautiful-congaree-25199.herokuapp.com/image',{
           method: 'put',
           headers:{'Content-type': 'application/json'},
           body:JSON.stringify({

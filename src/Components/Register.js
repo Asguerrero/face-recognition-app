@@ -25,7 +25,7 @@ onNameChange =(event) =>{
 
 onSubmitRegister = () =>{
 	
-	fetch('http://localhost:3000/register',{
+	fetch('https://beautiful-congaree-25199.herokuapp.com/register',{
 		method: 'post',
 		headers:{'Content-type': 'application/json'},
 		body:JSON.stringify({
